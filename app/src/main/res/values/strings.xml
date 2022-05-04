@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Mi Pequeña Biblioteca</string>
+
+    <!-- BOTONES -->
+    <string name="botonVolver">Volver</string>
+    <string name="botonGuardar">Guardar</string>
+    <string name="botonBorrar">Borrar</string>
+    <string name="botonLeyendo">Leyendo</string>
+    <string name="botonLeido">Leído</string>
+    <string name="botonParaLeer">Para Leer</string>
+    <string name="botonDeseados">Deseados</string>
+    <string name="botonAniadir">Añadir Libros</string>
+    <string name="botonConsultar">Consultar</string>
+    <string name="botonBuscandoInspiracion">¿Buscando Inspiración?</string>
+    <string name="botonLecturalia">Lecturalia</string>
+    <string name="botonGoodReads">Good Reads</string>
+    <string name="botonAmazon">Amazon</string>
+    <string name="botonCasaLibro">Casa del Libro</string>
+    <string name="botonEditar">Editar</string>
+
+
+    <!-- TITULOS -->
+    <string name="miPequeñaBiblioteca">Mi Pequeña Biblioteca</string>
+    <string name="tituloLeyendo">\tLeyendo</string>
+    <string name="tituloLeido">\tLeídos</string>
+    <string name="tituloParaLeer">\tPara Leer</string>
+    <string name="tituloDeseados">\tDeseados</string>
+    <string name="tituloAniadir">\tAñade tus libros</string>
+    <string name="tituloEditar">\tEditar libro</string>
+    <string name="tituloBuscandoInspiracion">¿No sabes qué leer?. Aquí tienes unas webs para buscar inspiración.</string>
+    <string name="tituloComprar">Aquí tienes unas páginas webs donde buscar tus libros.</string>
+
+    <!-- VARIOS -->
+    <string name="titulo">Título:</string>
+    <string name="autor">Autor:</string>
+    <string name="tituloBuscar">Título</string>
+    <string name="autorBuscar">Autor</string>
+    <string name="descripcion">Descripción:</string>
+    <string name="deseados">Deseados</string>
+    <string name="leyendo">Leyendo</string>
+    <string name="paraLeer">Para Leer</string>
+    <string name="leidos">Leído</string>
+    <string name="buscar">Buscar</string>
+    <string name="busqueda">Búsqueda</string>
+
+</resources>

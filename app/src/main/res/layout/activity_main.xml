@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout11"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f1f0"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+        android:text="Mi pequeña biblioteca"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/bt_Leyendo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#fadcd9"
+        android:layout_marginStart="20dp"
+        android:text="Leyendo"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/bt_Leido"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#fadcd9"
+        android:text="Leido"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/bt_Leyendo"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/bt_ParaLeer"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fadcd9"
+        android:text="Para Leer"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_Leyendo" />
+
+    <Button
+        android:id="@+id/bt_Deseados"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fadcd9"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Deseados"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/bt_ParaLeer"
+        app:layout_constraintTop_toBottomOf="@+id/bt_Leido" />
+
+    <Button
+        android:id="@+id/bt_Aniadir"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fadcd9"
+        android:layout_marginStart="20dp"
+        android:text="Añadir Libros"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_ParaLeer" />
+
+    <Button
+        android:id="@+id/bt_Inspiracion"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fadcd9"
+        android:text="¿Buscando Inspiración?"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/bt_Aniadir"
+        app:layout_constraintTop_toBottomOf="@+id/bt_Deseados" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="411dp"
+        android:layout_height="196dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/librosportada" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

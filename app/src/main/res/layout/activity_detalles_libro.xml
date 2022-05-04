@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f1f0"
+
+    tools:context=".DetallesLibro">
+
+
+    <TextView
+        android:id="@+id/tv_numero"
+        android:layout_width="0dp"
+        android:layout_height="14dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:fontFamily="cursive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        android:textColor="@color/black"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tituloDetalles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="cursive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/autor"
+        android:textColor="@color/black"
+
+        android:fontFamily="cursive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloDetalles" />
+
+    <TextView
+        android:id="@+id/tv_autorDetalles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/descripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_autorDetalles" />
+
+    <TextView
+        android:id="@+id/tv_descripcionDetalles"
+        android:layout_marginStart="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+
+        android:layout_marginEnd="20dp"
+        android:fontFamily="cursive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/tv_estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="cursive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_editar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_borrarDetalles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFAEAE"
+        android:text="@string/botonBorrar"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_editar" />
+
+    <Button
+        android:id="@+id/bt_editar"
+        android:layout_width="98dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFAEAE"
+        android:text="@string/botonEditar"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_volver"
+        android:layout_width="98dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFAEAE"
+        android:text="@string/botonVolver"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
