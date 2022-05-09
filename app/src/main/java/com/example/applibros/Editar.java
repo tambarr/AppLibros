@@ -88,7 +88,6 @@ public class Editar extends AppCompatActivity {
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                startActivity(new Intent(Editar.this, MainActivity.class));
                 finish();
             }
         });
@@ -102,11 +101,6 @@ public class Editar extends AppCompatActivity {
                 rg_GrupoEditar.clearCheck();
             }
         });
-
-
-
-
-
 
 
     }

@@ -10,7 +10,5 @@ public class Utilidades {
     public static final String CAMPO_DESCRIPCION = "descripcion";
     public static final String CAMPO_ESTADO = "estado";
 
-
-
     public static final String CREAR_TABLA_LIBRO = "CREATE TABLE " + TABLA_LIBRO + " ("  + CAMPO_INDICE + " INTEGER PRIMARY KEY AUTOINCREMENT, " + CAMPO_TITULO + " TEXT, " + CAMPO_AUTOR + " TEXT, " + CAMPO_DESCRIPCION + " TEXT, " + CAMPO_ESTADO + " TEXT)";
 }

@@ -71,7 +71,7 @@ public class ParaLeer extends AppCompatActivity {
         bt_volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ParaLeer.this, MainActivity.class));
+                finish();
             }
         });
         bt_buscar.setOnClickListener(new View.OnClickListener() {

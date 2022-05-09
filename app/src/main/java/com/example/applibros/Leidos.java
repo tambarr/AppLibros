@@ -46,15 +46,10 @@ public class Leidos extends AppCompatActivity {
             public void onClick(View view) {
                 int numero = listaLibro.get(recyclerViewLibro.getChildAdapterPosition(view)).getNumero();
                 String num = String.valueOf(numero);
-
-
                 Libro lib = listaLibro.get(recyclerViewLibro.getChildAdapterPosition(view));
-
                 Intent intent = new Intent(Leidos.this, DetallesLibro.class);
-
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("Libro", lib);
-
                 intent.putExtras(bundle);
                 startActivity(intent);
                 finish();
@@ -69,7 +64,6 @@ public class Leidos extends AppCompatActivity {
         bt_volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(Leidos.this, MainActivity.class));
                 finish();
             }
         });
@@ -88,13 +82,11 @@ public class Leidos extends AppCompatActivity {
         Cursor cursor = db.rawQuery("select * from libro where estado = ?", args);
         while (cursor.moveToNext()){
             libro = new Libro();
-
             libro.setNumero(cursor.getInt(0));
             libro.setTitulo(cursor.getString(1));
             libro.setAutor(cursor.getString(2));
             libro.setDescripcion(cursor.getString(3));
             libro.setEstado(cursor.getString(4));
-
             listaLibro.add(libro);
         }
     }

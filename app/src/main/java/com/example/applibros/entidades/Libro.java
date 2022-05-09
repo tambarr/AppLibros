@@ -10,7 +10,6 @@ public class Libro implements Serializable {
     private String estado;
 
 
-
     public Libro(int numero, String titulo, String autor, String descripcion, String estado) {
         this.numero = numero;
         this.titulo = titulo;
@@ -20,7 +19,6 @@ public class Libro implements Serializable {
     }
 
     public Libro() {
-
     }
 
     public int getNumero() {

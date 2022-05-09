@@ -52,7 +52,7 @@ public class Aniadir extends AppCompatActivity {
         bt_VolverAniadir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Aniadir.this, MainActivity.class));
+                finish();
             }
         });
 
@@ -86,6 +86,7 @@ public class Aniadir extends AppCompatActivity {
                     ed_DescripcionAniadir.setText("");
                     rg_Grupo.clearCheck();
                     estado_libro = "";
+                    Toast.makeText(getApplicationContext(), "Libro registrado", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -121,9 +122,8 @@ public class Aniadir extends AppCompatActivity {
         values.put(Utilidades.CAMPO_DESCRIPCION, ed_DescripcionAniadir.getText().toString());
         values.put(Utilidades.CAMPO_ESTADO, estado_libro);
 
-        //insertamos los valores. usamos inserd de SQLiteDatabase. Este método nos retorna un dato long dependiendo de los datos que enviamos
+        //insertamos los valores. usamos insert de SQLiteDatabase. Este método nos retorna un dato long dependiendo de los datos que enviamos
         Long idResultante = db.insert(Utilidades.TABLA_LIBRO, Utilidades.CAMPO_TITULO, values);
-        //Toast.makeText(getApplicationContext(), "ID: " + idResultante, Toast.LENGTH_SHORT).show();
         db.close();
 
     }

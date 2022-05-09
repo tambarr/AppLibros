@@ -32,7 +32,7 @@ public class Inspiracion extends AppCompatActivity {
         bt_Volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Inspiracion.this, MainActivity.class));
+                finish();
             }
         });
 

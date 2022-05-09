@@ -68,7 +68,6 @@ public class Deseados extends AppCompatActivity {
         bt_volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(Deseados.this, MainActivity.class));
                 finish();
             }
         });
@@ -76,7 +75,6 @@ public class Deseados extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Deseados.this, Buscar.class));
-                //finish();
             }
         });
     }

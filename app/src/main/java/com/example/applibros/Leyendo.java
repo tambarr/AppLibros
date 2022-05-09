@@ -68,7 +68,6 @@ public class Leyendo extends AppCompatActivity {
         bt_volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(Leyendo.this, MainActivity.class));
                 finish();
             }
         });
@@ -77,7 +76,6 @@ public class Leyendo extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Leyendo.this, Buscar.class));
-                finish();
             }
         });
     }

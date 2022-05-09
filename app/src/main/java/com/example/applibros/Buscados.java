@@ -64,15 +64,11 @@ public class Buscados extends AppCompatActivity {
                 finish();
             }
         });
-
-
         recyclerViewLibro.setAdapter(adapter);
-
 
         bt_volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Buscados.this, Buscar.class));
                 finish();
             }
         });

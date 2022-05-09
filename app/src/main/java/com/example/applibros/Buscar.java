@@ -64,7 +64,6 @@ public class Buscar extends AppCompatActivity {
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Buscar.this, MainActivity.class));
                 finish();
             }
         });
